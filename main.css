@@ -1,0 +1,85 @@
+html, body, #a {
+	font-family: 'Inconsolata', monospace;
+	color: white;
+	background-color: black;
+	background-image: url('assets/images/bg2.jpg');
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	/* cursor: url(assets/cursor/cursor.cur),auto; */
+}	
+#a {
+	display: table;
+}
+#b {
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+
+		text-align: center;
+	vertical-align: middle;
+}
+#box {
+	background-color:rgba(0, 0, 0, 0.3);
+	border: solid #ff6f59;
+	border-width: 1px;
+	margin: auto;
+	text-align: center;
+}
+.tab {
+    overflow: hidden;
+    background: none;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+	background-color: inherit;
+	font-family: 'Inconsolata', monospace;
+	font-size: 18px;
+	color: white;
+	margin-top: -1px;
+	margin-left: -4px;
+	margin-right: -5px;
+	border: solid #ff6f59;
+	border-width: 1px;
+    outline: none;
+    /* cursor: url(assets/cursor/select.cur),auto; */
+    padding: 4px 20px;
+	position: relative;
+	transition-property: color;
+}
+
+.tab button:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #ff6f59;
+	transform: scaleX(0);
+	transform-origin: 50%;
+	transition-property: transform;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-out;
+}
+.tab button:hover:before {
+	transform: scaleX(1);
+}
+.tab button:active {
+	background: #fca799
+}
+
+.tabcontent {
+    display: none;
+	margin: 5px;
+    padding: 20px 20px;
+    border: none;
+    border-bottom: none;
+	border-left: none;
+	border-right: none;
+	text-align: left;
+} 

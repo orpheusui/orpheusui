@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+https://coolors.co/ff6f59-254441-43aa8b-b2b09b-ef3054
+-->
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="content">
+<title>orpheus</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css" crossorigin="anonymous">
+</head>
+
+<body>
+<div id="a"><div id="b">
+	
+<div id="box" style="opacity:.8;width:800px;height:600px;background-image:url('assets/images/bg.png')">			
+<center>
+	
+	<h1 id="box" style="border-top:none;border-left:none;border-right:none;">orpheus</h1>
+	
+	<!-- Tabs -->
+	<div class="tab">
+		<button class="tablinks" style="background:#ff6f59;" onclick="openTab(event, 'Home'); this.style.background = '#ff6f59'">Home</button>
+		<button class="tablinks" onclick="openTab(event, 'Gaming'); this.style.background = '#ff6f59'">Gaming</button>
+		<button class="tablinks" onclick="openTab(event, 'Music'); this.style.background = '#ff6f59'">Music</button>
+		<button class="tablinks" onclick="openTab(event, 'Gallery'); this.style.background = '#ff6f59'">Gallery</button>
+		<button class="tablinks" onclick="openTab(event, 'About'); this.style.background = '#ff6f59'">About</button>
+	</div>
+	
+</center>
+	
+	<!-- Tab content -->
+	<div id="Home" class="tabcontent" style="display:block;">
+		home
+	</div>
+	<div id="Gaming" class="tabcontent">
+		<iframe style="float:right;" src="https://discordapp.com/widget?id=281172621423542274&theme=dark" width="350" height="400" allowtransparency="false" frameborder="0"></iframe>
+	</div>
+	<div id="Music" class="tabcontent">
+		music
+	</div>
+	<div id="Gallery" class="tabcontent">
+		gallery
+	</div>
+	<div id="About" class="tabcontent">
+		about
+	</div>
+	
+</div>
+
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		tablinks[i].style.background = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+	
+</div></div>	
+</body>
+
+</html>
